@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'Lobster', cursive; */
+html
+{
+    scroll-behavior: smooth;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header
+{
+    background: url("../images/banner3.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 90vh;
+}
+#header .overlay
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+}
+#header .logo
+{
+    padding: 20px 20px;
+}
+#header .logo h2
+{
+    color: white;
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 10px;
+}
+#header .logo span
+{
+    color: rgb(255, 113, 61);
+}
+#header ul 
+{
+    display: flex;
+    padding: 20px 0px;
+}
+#header ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+#header ul li a
+{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7em;
+    padding: 5px 10px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+}
+#header ul li a:hover
+{
+    background-color:rgba(246, 149, 113,0.3);
+    color: white;
+}
+#header .pnumber
+{
+    padding: 20px 20px;
+}
+#header .pnumber h2
+{
+    color: rgb(255, 113, 61);
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 4px;
+}
+#header .bannertext
+{
+    position: absolute;
+    top: 150px;
+    left: 400px;
+    padding: 10px 10px;
+}
+#header .bannertext p
+{
+    font-size: 0.8vw;
+    border: 1px solid white;
+    font-family: 'Montserrat', sans-serif;
+    display: inline;
+    padding: 10px 10px;
+    line-height: 3em;
+    letter-spacing: 5px;
+}
+#header .bannertext h2
+{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5vw;
+    line-height: 4.8vw;
+    margin-top: 25px;
+    text-shadow: 0 0 20px black,
+                0 0 10px black,
+                0 0 50px black;
+}
+#header .bannertext h2 span
+{
+    color: rgb(255, 113, 61);
+}
+#header .bannertext a
+{
+    padding:15px 50px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background: rgb(247,110,40);
+    background: linear-gradient(90deg, rgba(247,110,40,1) 0%, rgba(246,134,60,1) 50%, rgba(255,184,0,1) 100%);
+    color: white;
+    border: 1px solid black;
+    font-size: 1vw;
+    line-height: 6vw;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+#about
+{
+    width: 100%;
+    /* height: 70vh; */
+    padding: 100px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(241, 240, 240);
+}
+#about .image
+{
+    width: 750px;
+    height: 550px;
+    /* border: 1px solid black; */
+    padding: 10px 10px;
+    
+}
+#about .image img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+#about .content
+{
+    width: 700px;
+    height: 500px;
+    /* border: 1px solid black; */
+    padding: 1px 15px;
+}
+#about .content h2
+{
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#about .content h2 span
+{
+    color: rgb(255, 113, 61);
+}
+#about .content p
+{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    line-height: 3.5vh;
+}
+#about .content a
+{
+    padding:15px 40px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background: rgb(247,110,40);
+    background: linear-gradient(90deg, rgba(247,110,40,1) 0%, rgba(246,134,60,1) 50%, rgba(255,184,0,1) 100%);
+    color: white;
+    font-size: 20px;
+    line-height: 3vw;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+#discount
+{
+    width: 100%;
+    /* height: 50vh; */
+    background: url("../images/discount.jpg") no-repeat center center/cover;
+    /* background-attachment: fixed; */
+}
+#discount .overlay
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0px;
+}
+#discount .overlay p 
+{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 18px;
+}
+#discount .overlay h2
+{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+}
+#discount .overlay h2 span
+{
+    color: rgb(255, 113, 61);
+}
+#discount .overlay a
+{
+    padding:15px 40px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background: rgb(247,110,40);
+    background: linear-gradient(90deg, rgba(247,110,40,1) 0%, rgba(246,134,60,1) 50%, rgba(255,184,0,1) 100%);
+    color: white;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    font-weight: bold;
+} 
+#gallery
+{
+    width: 100%;
+    /* height: 86vh; */
+    background-color: rgb(241, 240, 240);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 1px;
+    /* border: 2px solid red; */
+}
+#gallery h2
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5vw;
+    color: black;
+    text-transform: uppercase;
+}
+#gallery p
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1vw;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+#gallery .images
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around
+}
+#gallery .imgs
+{
+    width: 470px;
+    height: 300px;
+}
+#gallery .imgs img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#bmidetails
+{
+    width: 100%;
+    /* height: 60vh; */
+    background-color: rgb(241, 240, 240);
+    display: flex;
+    padding: 0px 10px;
+    flex-wrap: wrap;
+}
+#bmidetails .bmichart
+{
+    width: 50%;
+    height: 100%;
+    background: url("../images/bmi1.jpg") no-repeat center center/cover;
+
+}
+#bmidetails .bmichart .overlay
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+}
+#bmidetails .bmichart .overlay h2
+{
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 3vw;
+    text-transform: lowercase;
+}
+#bmidetails .bmichart .overlay table th
+{
+    color: white;
+    font-size: 1.5vw;
+    padding: 10px 100px;
+    text-align: center;
+    border: 1px solid rgb(173, 173, 173);
+    background: rgb(247,110,40);
+    background: linear-gradient(90deg, rgb(240, 74, 74) 0%, rgb(246, 60, 60) 50%, rgb(251, 91, 42) 100%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+#bmidetails .bmichart .overlay table td
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 249, 249);
+    text-align: center;
+    border: 1px solid rgb(173, 173, 173);
+    padding: 20px 0px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#bmidetails .bmicalculator
+{
+    width: 50%;
+    /* height: 100%; */
+    background: url("../images/bmi2.jpg") no-repeat center center/cover;
+}
+#bmidetails .bmicalculator .overlay
+{
+    position: relative;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding : 100px;
+    flex-wrap: wrap;
+}
+#bmidetails .bmicalculator .overlay h2
+{
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 3vw;
+    text-transform: lowercase;
+}
+#bmidetails .bmicalculator .overlay .tbl input
+{
+    padding: 10px 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid gray;
+    margin: 10px 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    font-weight: bold;
+    height: 50px;
+}
+#bmidetails .bmicalculator .overlay .tbl select
+{
+    padding: 10px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid gray;
+    margin: 10px 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    height: 50px;
+}
+#bmidetails .bmicalculator .overlay .tbl a
+{
+    font-size: 1vw;
+    padding: 10px 60px;
+    margin-left: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(247,110,40);
+    background: linear-gradient(90deg, rgb(240, 74, 74) 0%, rgb(246, 60, 60) 50%, rgb(251, 91, 42) 100%);
+    text-decoration: none;
+}
